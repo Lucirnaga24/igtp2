@@ -1,20 +1,6 @@
-body {
-    background-image: url('../media/bk.gif');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: white !important;
-}
-
-.navbar-light .dropdown-menu {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.navbar-light .dropdown-item {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-}
+.navtext {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    font-style: normal;
+  }
