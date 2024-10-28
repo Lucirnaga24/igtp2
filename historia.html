@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Historia </title>
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxanium&family=Pacifico&family=Teko&family=Work+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Figtree&family=Nabla&family=Oxanium&family=Pacifico&family=Teko&family=Work+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Figtree&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nabla&family=Open+Sans&family=Oxanium&family=Pacifico&family=Teko&family=Work+Sans&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[url('./media/bk.gif')] bg-cover bg-center">
+
+  <!-- NAV -->
+  <nav class=" text-white lg:dark:bg-transparent dark:bg-red-700 p-3">
+    <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+      <!-- Logo -->
+      <div class="flex items-center justify-between md:w-auto w-full">
+        <img src="./media/logo.png" class="h-12 mr-3 sm:h-14" alt="Logo">
+  
+        <!-- mobile menu icon -->
+        <div class="md:hidden flex items-center">
+          <button type="button" class="mobile-menu-button dark:text-red-950 dark:hover:text-amber-300">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"></path>
+            </svg>
+            <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Páginas -->
+      <div class="hidden md:flex md:flex-row flex-col items-center justify-center gap-8 pb-3 md:space-x-1 pb-3 md:pb-0 navigation-menu">
+        <a href="./index.html" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 
+        lg:dark:text-white
+        lg:hover:bg-transparent lg:border-0 lg:hover:text-red-700 xs:hover:text-black-700 lg:p-0 dark:text-red-950 lg:dark:hover:text-red-700 dark:hover:bg-red-700 dark:hover:text-black-700 lg:dark:hover:bg-transparent dark:border-transparent dark:hover:text-amber-300 navtext">HOME</a>
+        <a href="./listen.html" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 
+        lg:dark:text-white
+        lg:hover:bg-transparent lg:border-0 lg:hover:text-red-700 xs:hover:text-black-700 lg:p-0 dark:text-red-950 lg:dark:hover:text-red-700 dark:hover:bg-red-700 dark:hover:text-black-700 lg:dark:hover:bg-transparent dark:border-transparent dark:hover:text-amber-300 navtext">ESCUCHA</a>
+        <a href="./historia.html" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 
+        lg:dark:text-white
+        lg:hover:bg-transparent lg:border-0 lg:hover:text-red-700 xs:hover:text-black-700 lg:p-0 dark:text-red-950 lg:dark:hover:text-red-700 dark:hover:bg-red-700 dark:hover:text-black-700 lg:dark:hover:bg-transparent dark:border-transparent dark:hover:text-amber-300 navtext">HISTORIA</a>
+        <!-- Dropdown menu -->
+        <div class="relative">
+          <button type="button" class="dropdown-toggle py-2 px-3  flex items-center gap-2 rounded block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 
+          lg:dark:text-white
+          lg:hover:bg-transparent lg:border-0 lg:hover:text-red-700 xs:hover:text-black-700 lg:p-0 dark:text-red-950 lg:dark:hover:text-red-700 dark:hover:bg-red-700 dark:hover:text-black-700 lg:dark:hover:bg-transparent  dark:border-transparent dark:hover:text-amber-300 navtext">
+            <span class="pointer-events-none select-none">PROYECTOS</span>
+            <svg class="w-3 h-3 pointer-events-none" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+          </button>
+          <div class="dropdown-menu absolute hidden  text-white rounded-b-lg pb-2 w-48">
+            <a href="./proyectos.html" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 
+            lg:dark:text-white
+            lg:hover:bg-transparent lg:border-0 lg:hover:text-red-700 xs:hover:text-black-700 lg:p-0 dark:text-red-950 lg:dark:hover:text-red-700 dark:hover:bg-red-700 dark:hover:text-black-700 lg:dark:hover:bg-transparent lg:dark:bg-transparent dark:bg-amber-300 dark:hover:bg-white  dark:border-transparent dark:hover:text-amber-300 navtext">PROYECTOS</a>
+            <a href="./colabs.html" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 
+            lg:dark:text-white
+            lg:hover:bg-transparent lg:border-0 lg:hover:text-red-700 xs:hover:text-black-700 lg:p-0 dark:text-red-950 lg:dark:hover:text-red-700 dark:hover:bg-red-700 dark:hover:text-black-700 lg:dark:hover:bg-transparent lg:dark:bg-transparent dark:bg-amber-300 dark:hover:bg-white  dark:border-transparent dark:hover:text-amber-300 navtext">COLABORACIONES</a>
+            <a href="./filmografia.html" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 
+            lg:dark:text-white
+            lg:hover:bg-transparent lg:border-0 lg:hover:text-red-700 xs:hover:text-black-700 lg:p-0 dark:text-red-950 lg:dark:hover:text-red-700 dark:hover:bg-red-700 dark:hover:text-black-700 lg:dark:hover:bg-transparent lg:dark:bg-transparent dark:bg-amber-300 dark:hover:bg-white  dark:border-transparent dark:hover:text-amber-300 navtext">FILMOGRAFIA</a>
+          </div>
+        </div>
+        <a href="./fanart.html" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 
+        lg:dark:text-white
+        lg:hover:bg-transparent lg:border-0 lg:hover:text-red-700 xs:hover:text-black-700 lg:p-0 dark:text-red-950 lg:dark:hover:text-red-700 dark:hover:bg-red-700 dark:hover:text-black-700 lg:dark:hover:bg-transparent dark:border-transparent dark:hover:text-amber-300 navtext">FAN ART</a>
+        <a href="./contact.html" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 
+        lg:dark:text-white
+        lg:hover:bg-transparent lg:border-0 lg:hover:text-red-700 xs:hover:text-black-700 lg:p-0 dark:text-red-950 lg:dark:hover:text-red-700 dark:hover:bg-red-700 dark:hover:text-black-700 lg:dark:hover:bg-transparent dark:border-transparent dark:hover:text-amber-300 navtext">CONTACTO</a>
+        <a href="./aboutus.html" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 
+        lg:dark:text-white
+        lg:hover:bg-transparent lg:border-0 lg:hover:text-red-700 xs:hover:text-black-700 lg:p-0 dark:text-red-950 lg:dark:hover:text-red-700 dark:hover:bg-red-700 dark:hover:text-black-700 lg:dark:hover:bg-transparent dark:border-transparent dark:hover:text-amber-300 navtext">ABOUT US</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Título -->
+  <div class="flex items-center justify-center lg:mt-6 mt-10 mb-6">
+    <p class="text-5xl bannertext">HISTORIA</p>
+  </div>
+
+   <!-- Div general -->
+  <div class="grid grid-cols-1 lg:grid-cols-5 mx-10">
+
+    <!-- Imagen 1 -->
+    <div class="col-span-2 bg-gray-50 m-6 px-2 lg:py-2 bg-red-700 rounded-lg lg:h-80 h-auto lg:translate-y-12">
+      <div class="bg-red-700 lg:-translate-y-2 h-auto m-3  flex items-center justify-center overflow-hidden rounded-lg">
+        <img src="./media/ellos.jpg" alt="Descripción de la imagen" class="w-full lg:h-72 object-cover rounded-lg lg:translate-y-2">
+      </div>
+    </div>
+    
+    <!-- Texto 1 -->
+    <div class="col-span-3 bg-transparent m-6 bg-amber-400 ">
+      <div class=" bg-transparent  m-3 rounded flex items-center justify-center overflow-hidden rounded-lg lg:h-90 h-auto">
+        <p class="text-white custom-justify parrafotext">
+        Daft Punk, el dúo francés formado por Thomas Bangalter y Guy-Manuel de Homem-Christo, se consolidó como una de las bandas más influyentes de la música electrónica desde su formación en 1993. Su trayectoria comenzó en la escena underground de París, donde ambos compartían una fascinación por la música house y la electrónica.
+        El nombre Daft Punk fue extraído de una crítica negativa de su banda anterior, Darlin’, en el medio Melody Maker. El escritor Dave Jennings describió la música de esa banda como “a daft punky thrash”. Los miembros de la banda se rieron, encontrando la crítica humorística. Homem-Christo fue citado diciendo: “Luchamos tanto tiempo para encontrar [el nombre] Darlin’, y [este nombre] surgió tan rápido”. <br> <br>
+        Daft Punk lanzó su primera canción destacada, "Da Funk", en 1995, inspirada por el hip-hop estadounidense pero asociada al género house. Este éxito, junto con su gira de alrededor de 40 presentaciones, los catapultó a la fama. En 1997, firmaron con Virgin Records, asegurándose los derechos de su música, influenciados por las experiencias del padre de Thomas como productor.
+        </p>
+      </div>
+    </div>
+
+    <!-- Texto 2 -->
+    <div class="col-span-2 bg-transparent m-6 bg-amber-400 ">
+      <div class="bg-transparent h-48 m-3 rounded flex items-center justify-center overflow-hidden rounded-lg lg:h-72 h-auto">
+        <p class="text-white custom-justify parrafotext">
+          Ese mismo año lanzaron Homework, un álbum aclamado que combinaba house, techno, disco y funk, vendiendo más de dos millones de copias. El éxito se extendió gracias a los videos musicales transmitidos por MTV, que les permitieron llegar a un público más amplio. Además, introdujeron su imagen enmascarada, un sello distintivo que comenzó a definir su estilo.
+        </p>
+      </div>
+    </div>
+
+    <!-- Imagen 2 -->
+    <div class="col-span-3 bg-gray-50 m-6 bg-red-700 rounded-lg lg:h-80 h-auto">
+      <div class="bg-transparent lg:pt-3 lg:px-3 h-72 m-3 rounded flex items-center justify-center overflow-hidden rounded-lg">
+        <img src="./media/mascaras.jpeg" alt="Descripción de la imagen" class="w-full h-full object-cover rounded-lg">
+      </div>
+    </div>
+
+    <!-- Imagen 3 -->
+    <div class="col-span-2 bg-gray-50 m-6 px-2 lg:py-2 bg-red-700 rounded-lg lg:h-auto h-auto">
+      <div class="bg-gray-500 lg:h-auto  m-3 rounded flex items-center justify-center overflow-hidden rounded-lg">
+        <img src="./media/cascos.jpg" alt="Descripción de la imagen" class="w-full h-full object-cover rounded-lg ">
+      </div>
+    </div>
+
+    <!-- Texto  3 -->
+    <div class="col-span-3 bg-transparent m-6 bg-amber-400 ">
+      <div class="bg-transparent lg:translate-y-20  m-3 rounded flex items-center justify-center rounded-lg lg:h-auto h-auto">
+        <p class="text-white custom-justify parrafotext">
+          El 9 de septiembre de 1999, Daft Punk estaba trabajando en su estudio casero en nueva música para su próximo álbum cuando, de repente, su sampler se estrelló, comenzó a echar chispas y luego explotó en una bola de fuego y metal fundido, dejándolos inconscientes. Al despertar, descubrieron que su piel ahora era de metal y gran parte de su cuerpo era inorgánico. Tienen poca memoria de su pasado, pero los médicos les dicen que son Daft Punk y que han tenido un accidente. Necesitaron someterse a una cirugía y, como resultado, ahora son parcialmente máquinas. Aún conservan su cerebro y corazón, pero el resto de su cuerpo es mecánico. Aceptan este nuevo cuerpo y continúan grabando su próximo álbum. Esta es la historia que Daft Punk contó a la prensa a principios de los 2000 como una forma de explicar su repentina nueva apariencia robótica.
+        </p>
+      </div>
+    </div>
+
+    <!-- Texto 4 -->
+    <div class="col-span-3 bg-transparent m-6 bg-amber-400 ">
+      <div class="bg-transparent lg:pt-20 m-3 rounded flex items-center justify-center rounded-lg lg:h-auto h-auto">
+        <p class="text-white custom-justify parrafotext">
+        Daft Punk usó la metáfora de transformarse en robots con cerebros y corazones humanos como una forma artística de representar la fusión entre hombre y máquina en la música electrónica, especialmente en el house. Esta metáfora refleja su estilo musical, donde reutilizan elementos, pero en lugar de ser pistas de música disco, se reutilizan a sí mismos. Los apodos robóticos, TB3 y GM08, hacen referencia a sintetizadores icónicos (el TB-303 y el TR-808) y coinciden con los cumpleaños de los miembros, Thomas Bangalter y Guy-Manuel. Aunque la conexión intencionada no está confirmada, los nombres robóticos no aparecieron hasta 2013. <br> <br>
+        El lanzamiento de Discovery en 2001 marcó un cambio drástico en el sonido de Daft Punk. Este álbum se inclinaba hacia el pop y el disco, con una producción mucho más accesible que Homework. Su éxito más grande, "One More Time", demostró su habilidad para crear éxitos comerciales sin sacrificar su identidad artística.
+        Discovery también estuvo acompañado de la película animada Interstella 5555, una colaboración con el artista Leiji Matsumoto, que servía como una narración visual del álbum.
+        </p>
+      </div>
+      </div>
+
+      <!-- Imagen 4 -->
+      <div class="col-span-2 bg-gray-50 m-6 bg-red-700 rounded-lg  h-auto">
+        <div class="bg-transparent  lg:px-3 h-auto m-3 rounded flex items-center justify-center overflow-hidden rounded-lg">
+          <img src="./media/interstella.jpeg" alt="Descripción de la imagen" class="w-full h-full object-cover rounded-lg">
+        </div>
+      </div>
+
+      <!-- Imagen 5 -->
+      <div class="col-span-2 bg-gray-50 m-6 px-2 lg:py-2 bg-red-700 rounded-lg lg:h-90 h-auto">
+        <div class="bg-red-700 h-auto m-3  flex items-center justify-center overflow-hidden rounded-lg">
+          <img src="./media/techn.jpeg" alt="Descripción de la imagen" class="w-full h-72 object-cover rounded-lg ">
+        </div>
+      </div>
+
+      <!-- Texto 5 -->
+      <div class="col-span-3 bg-transparent m-6 bg-amber-400 ">
+        <div class="bg-transparent lg:translate-y-4 rounded flex items-center justify-center rounded-lg lg:h-70 h-auto">
+          <p class="text-white custom-justify parrafotext">
+          Tras el éxito de sus dos primeros álbumes, Daft Punk regresó al estudio para trabajar en un nuevo proyecto. En lugar de seguir la tendencia pop de la música electrónica de la época, decidieron tomar un rumbo más experimental con un álbum de rock/electrónica. Para lograr un sonido más crudo y humano, utilizaron guitarras y pasaron solo 12 días en el estudio en 2004, lo que dio como resultado Human After All, lanzado en marzo de 2005. <br> <br>
+          Este álbum de 10 pistas, con un tono oscuro y pesimista sobre la tecnología, presentaba guitarras distorsionadas en lugar de los sintetizadores pulidos y las muestras de disco de sus trabajos anteriores. Aunque el álbum se filtró meses antes de su lanzamiento y generó opiniones divididas entre críticos y fans, fue la obra que Daft Punk deseaba hacer, priorizando su visión personal sin preocuparse por la recepción pública.
+          </p>
+        </div>
+      </div>
+
+      <!-- Texto 6 -->
+      <div class="col-span-3 bg-transparent m-6 bg-amber-400 ">
+        <div class="bg-transparent  lg:translate-y-12  rounded flex items-center justify-center rounded-lg lg:h-auto h-auto">
+          <p class="text-white custom-justify parrafotext">
+          En 2013, Daft Punk lanzó Random Access Memories, un álbum que representaba un alejamiento de su estilo electrónico para explorar el funk, el soul y el rock. El disco fue grabado con músicos en vivo y evitó el uso extensivo de sintetizadores. Este álbum fue aclamado por la crítica y fue un éxito comercial, con sencillos como "Get Lucky" en colaboración con Pharrell Williams y Nile Rodgers. <br> <br>
+          El álbum ganó varios premios Grammy, incluido Álbum del Año, y fue elogiado por su enfoque nostálgico de los géneros musicales de las décadas de los 70 y 80, con una producción meticulosa que rendía homenaje a los músicos de esa época.
+          </p>
+        </div>
+      </div>
+
+      <!-- Imagen 6 -->
+      <div class="col-span-2 bg-gray-50 m-6 bg-red-700 rounded-lg lg:h-80 h-auto">
+        <div class="bg-transparent lg:h-72 lg:translate-y-0.5  lg:px-3  h-auto m-3 rounded flex items-center justify-center overflow-hidden rounded-lg">
+          <img src="./media/getlucky.jpg" alt="Descripción de la imagen" class="w-full h-full object-cover rounded-lg">
+        </div>
+      </div>
+
+      <!-- Imagen 7 -->
+      <div class="col-span-2 bg-gray-50 m-6 px-2 lg:py-2 bg-red-700 rounded-lg lg:h-90 h-auto">
+        <div class="bg-red-700 h-auto m-3  flex items-center justify-center overflow-hidden rounded-lg">
+          <img src="./media/fin2.jpg" alt="Descripción de la imagen" class="w-full h-72 object-cover rounded-lg ">
+        </div>
+      </div>
+
+      <!-- Texto 7 -->
+      <div class="col-span-3 bg-transparent m-6 bg-amber-400 ">
+        <div class="bg-transparent lg:translate-y-24 rounded flex items-center justify-center rounded-lg lg:h-70 h-auto">
+          <p class="text-white custom-justify parrafotext">
+            El 22 de febrero de 2021, el dúo francés anunció su separación a través de un video subido en sus redes sociales llamado «Epilogue». Este tiene una duración de 7:57 minutos y toma un fragmento de su película «Electroma», del año 2006, y parte de «Touch», canción lanzada en 2013 en el álbum «Random Access Memories».
+          </p>
+        </div>
+      </div>
+
+      <!-- Texto 8 -->
+      <div class="col-span-3 bg-transparent m-6 bg-amber-400 ">
+        <div class="bg-transparent lg:translate-y-10  rounded flex items-center justify-center rounded-lg lg:h-70 h-auto">
+          <p class="text-white custom-justify parrafotext">
+          En una nueva entrevista con la BBC, Bangalter se sinceró sobre las causas que llevaron al dúo tomar caminos diferentes y lo que ha sido su vida y su carrera desde entonces. “Daft Punk era un proyecto que desdibujaba la línea entre realidad y ficción con estos personajes robóticos. Era un punto muy importante para mí y para Guy-Manuel no estropear la narrativa mientras sucedía”. 
+          Y continuó: “Me encanta la tecnología como herramienta pero de alguna manera me aterroriza la naturaleza de la relación entre las máquinas y nosotros mismos. Ahora que la historia ha terminado, me pareció interesante revelar una parte del proceso creativo que tiene mucho de humano y nada de algorítmico”. <br>
+          "Lo último que me gustaría ser, en el mundo en que vivimos, en 2023, es un robot”.
+          </p>
+        </div>
+      </div>
+
+      <!-- Imagen 8 -->
+      <div class="col-span-2 bg-gray-50 m-6 px-2 lg:py-2 bg-red-700 rounded-lg lg:h-90 h-auto mb-20">
+        <div class="bg-red-700 h-auto m-3  flex items-center justify-center overflow-hidden rounded-lg">
+          <img src="./media/fin4.png" alt="Descripción de la imagen" class="w-full h-72 object-cover rounded-lg ">
+        </div>
+      </div>
+
+  </div>
+      
+
+  <!-- Footer -->
+  <footer class="mx-auto w-full max-w-container px-4 sm:px-6 lg:px-8 mt-auto">
+    <div class="border-t border-slate-900/5 py-10">
+      <p class="mt-5 text-center text-sm leading-6 text-slate-500">© 2022 Tailwind Labs Inc. All rights reserved.</p>
+      <div class="mt-8 flex items-center justify-center space-x-4 text-sm font-semibold leading-6 text-slate-700">
+        <a class="dark:hover:text-white" href="/privacy-policy">Blablabla</a>
+      <div class="h-4 w-px bg-slate-500/20"></div>
+        <a class="dark:hover:text-white" href="/changelog">blablabla</a>
+      </div>
+    </div>
+  </footer>
+
+    <script src="js/utilidades.js"></script>
+</body>
+</html>

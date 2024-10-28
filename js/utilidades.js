@@ -1,3 +1,4 @@
+// TOGGLE
 document.addEventListener("DOMContentLoaded", () => {
     // Select all dropdown toggle buttons
     const dropdownToggles = document.querySelectorAll(".dropdown-toggle")
@@ -43,3 +44,16 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
   })
+
+
+
+
+
+
+
+
+
+  
+  
+
+ 

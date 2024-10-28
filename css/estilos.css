@@ -1,6 +1,38 @@
+/* Google font para el nav y algunas otras cosas */
 .navtext {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-size: 1em;
     font-style: normal;
+  }
+
+/* Google font amarilla (titulos) */
+  .bannertext {
+    font-family: "Nabla", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "EDPT" 100,
+      "EHLT" 12;
+  }
+
+/* Google font para textos */
+  .parrafotext {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+  /* Color que no esta en Tailwind */
+  footer {
+    background-color: rgb(0, 14, 19);
+  }
+
+ /* Texto justificado. No esta en tailwind */
+  .custom-justify {
+    text-align: justify;
   }

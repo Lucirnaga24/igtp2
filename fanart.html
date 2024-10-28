@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> About us </title>
+  <title> Fan Art </title>
   <link rel="stylesheet" type="text/css" href="css/estilos.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Figtree&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nabla&family=Open+Sans&family=Oxanium&family=Pacifico&family=Teko&family=Work+Sans&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 </head>
 
 <body class="bg-[url('./media/bk.gif')] bg-cover bg-center">
@@ -90,8 +91,69 @@
 
   <!-- Título -->
   <div class="flex items-center justify-center lg:my-8 mx-10 my-8">
-    <p class="text-5xl text-white">ABOUT US</p>
+    <p class="text-5xl bannertext">FAN ART</p>
   </div>
+
+  <!-- Galeria de fotos -->
+  <div id="app" class="text-center mb-20">
+    <div class="p-10 grid grid-cols-1 lg:grid-cols-4 gap-5">
+        <img v-for="(image, index) in images" 
+            :key="index" 
+            class="w-full h-full object-cover cursor-pointer"
+            :src="image.src" :alt="image.alt" 
+            @click="showModal(image.src)" />
+    </div>
+    <!-- Modal -->
+    <div v-if="isModalOpen" id="modal" class="fixed top-0 left-0 z-80 w-screen h-screen bg-black/70 flex justify-center items-center">
+        <a class="absolute left-10 z-90 text-white text-6xl font-bold navtext lg:ml-48 hover:text-red-700" @click="prevImage">❮</a>
+        <img id="modal-img" class="max-w-[90%] max-h-[80%] object-cover" :src="modalImage" />
+        <a class="absolute right-10 z-90 text-white text-6xl font-bold navtext lg:mr-48 hover:text-red-700" @click="nextImage">❯</a>
+        <a class="fixed z-90 top-6 right-8 text-white text-5xl font-bold" href="javascript:void(0)" @click="closeModal">×</a>
+    </div>
+  </div>
+
+        <script>
+            new Vue({
+                el: '#app',
+                data: {
+                    images: [
+                        { src: './media/fn9.jpg', alt: 'Img 9' },
+                        { src: './media/fn11.jpg', alt: 'Img 11' },
+                        { src: './media/fn3.jpg', alt: 'Img 3' },
+                        { src: './media/fn10.jpg', alt: 'Img 10' },
+                        { src: './media/fn12.jpg', alt: 'Img 12' },
+                        { src: './media/fn1.jpg', alt: 'Img 1' },
+                        { src: './media/fn2.jpg', alt: 'Img 2' },
+                        { src: './media/fn4.jpg', alt: 'Img 4' },
+                        { src: './media/fn5.jpg', alt: 'Img 5' },
+                        { src: './media/fn6.jpg', alt: 'Img 6' },
+                        { src: './media/fn7.jpg', alt: 'Img 7' },
+                        { src: './media/fn8.jpg', alt: 'Img 8' },
+                    ],
+                    isModalOpen: false,
+                    modalImage: '',
+                    currentIndex: 0,
+                },
+                methods: {
+                    showModal(imageSrc) {
+                        this.modalImage = imageSrc;
+                        this.isModalOpen = true;
+                        this.currentIndex = this.images.findIndex(img => img.src === imageSrc);
+                    },
+                    closeModal() {
+                        this.isModalOpen = false;
+                    },
+                    prevImage() {
+                        this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
+                        this.modalImage = this.images[this.currentIndex].src;
+                    },
+                    nextImage() {
+                        this.currentIndex = (this.currentIndex + 1) % this.images.length;
+                        this.modalImage = this.images[this.currentIndex].src;
+                    },
+                }
+            });
+        </script>
 
   <!-- Footer -->
   <footer class="mx-auto w-full max-w-container px-4 sm:px-6 lg:px-8 mt-auto">
