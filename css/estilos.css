@@ -27,13 +27,12 @@
       "wdth" 100;
   }
 
-  /* Color que no esta en Tailwind */
+/* Color que no esta en Tailwind */
   footer {
     background-color: rgb(0, 14, 19);
   }
 
- /* Texto justificado. No esta en tailwind */
+/* Texto justificado */
   .custom-justify {
     text-align: justify;
   }
-

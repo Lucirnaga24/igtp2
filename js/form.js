@@ -1,3 +1,4 @@
+// VALIDACION DEL FORMULARIO DE CONTACTO
 let contactForm = document.getElementById('contactForm');
 let nameInput = document.getElementById('name');
 let nameValidation = document.getElementById('nameValidation');
